@@ -1,9 +1,9 @@
 import { ArrowUpRight } from "lucide-react";
 
 const works = [
-  { img: "/images/abstract-teal.jpg", title: "Halo Digital Agency website", site: "" },
-  { img: "/images/abstract-purple-cubes.jpg", title: "Halo Digital Agency website", site: "halodigital.xyz" },
-  { img: "/images/still-life-2.jpg", title: "Halo Digital Agency website", site: "" },
+  { img: "/images/abstract-teal.jpg", title: "AngularJS to Vue Migration", site: "Architecture upgrade" },
+  { img: "/images/abstract-purple-cubes.jpg", title: "Responsive Product Dashboard", site: "React + Redux" },
+  { img: "/images/still-life-2.jpg", title: "CMS Content Platform", site: "Figma to code" },
 ];
 
 export default function LatestWorks() {
@@ -39,17 +39,17 @@ export default function LatestWorks() {
               </div>
               <div className="mt-4 flex items-center justify-between text-sm">
                 <span className="font-medium text-neutral-800">{w.title}</span>
-                <span className="text-neutral-400">For Squeeze</span>
+                <span className="text-neutral-400">{w.site}</span>
               </div>
             </div>
           ))}
         </div>
 
         <a
-          href="#portfolio"
+          href="#contact"
           className="mt-14 inline-flex items-center gap-2 text-sm font-medium text-neutral-900 underline underline-offset-4"
         >
-          Check out More → View More
+          Discuss a project → Let&apos;s talk
         </a>
       </div>
     </section>

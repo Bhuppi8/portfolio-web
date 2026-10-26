@@ -18,7 +18,7 @@ export default function Navbar() {
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white">
             <Sparkles size={15} />
           </span>
-          <span className="hidden text-white sm:inline">D.Nova</span>
+          <span className="hidden text-white sm:inline">Bhupender Singh Rautela</span>
         </a>
 
         <ul className="hidden items-center gap-9 text-sm text-white/80 md:flex">

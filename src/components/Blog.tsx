@@ -1,21 +1,21 @@
 const posts = [
   {
     img: "/images/blog-abstract-1.jpg",
-    tag: "MARKETING",
+    tag: "FRONTEND",
     read: "5 min read",
-    title: "Conducting in-depth research and usability testing",
+    title: "Modernizing legacy apps with Vue and reusable component architecture",
   },
   {
     img: "/images/blog-abstract-1.jpg",
-    tag: "MARKETING",
-    read: "5 min read",
-    title: "Designing cohesive strategies and visual identities",
+    tag: "PERFORMANCE",
+    read: "4 min read",
+    title: "Improving app performance with memoization, lazy loading, and clean state flow",
   },
   {
     img: "/images/blog-abstract-2.jpg",
-    tag: "MARKETING",
-    read: "5 min read",
-    title: "Providing expert advice and strategic guidance",
+    tag: "UX",
+    read: "6 min read",
+    title: "Turning Figma designs into accessible, pixel-perfect interfaces",
   },
 ];
 
@@ -27,7 +27,7 @@ export default function Blog() {
           <span className="h-1.5 w-1.5 rounded-full bg-neutral-900" /> Blogs
         </p>
         <h2 className="text-4xl font-medium tracking-tight text-neutral-900 sm:text-5xl">
-          Design Insights &amp; Trends
+          Frontend Notes &amp; Ideas
         </h2>
 
         <div className="mt-14 grid grid-cols-1 gap-6 text-left sm:grid-cols-2 lg:grid-cols-3">

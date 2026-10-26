@@ -1,4 +1,4 @@
-const links = ["Home", "About Me", "Portfolio", "Services", "Blog"];
+const links = ["Home", "About Me", "Portfolio", "Experience", "Blog"];
 
 export default function Footer() {
   return (
@@ -14,15 +14,18 @@ export default function Footer() {
           ))}
         </ul>
 
-        <a
-          href="mailto:hello@dnova.com"
-          className="text-2xl font-medium tracking-tight transition hover:text-white/80 sm:text-3xl"
-        >
-          hello@dnova.com
-        </a>
+        <div className="text-center sm:text-right">
+          <a
+            href="mailto:bhuppi.singh8@gmail.com"
+            className="block text-2xl font-medium tracking-tight transition hover:text-white/80 sm:text-3xl"
+          >
+            bhuppi.singh8@gmail.com
+          </a>
+          <p className="mt-2 text-sm text-white/50">+91 885-953-3199 · Gurugram, Haryana, India</p>
+        </div>
       </div>
       <p className="mt-10 text-center text-xs text-white/30">
-        © {new Date().getFullYear()} D.Nova. All rights reserved.
+        © {new Date().getFullYear()} Bhupender Singh Rautela. All rights reserved.
       </p>
     </footer>
   );

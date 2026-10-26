@@ -1,10 +1,10 @@
 import { ArrowUpRight } from "lucide-react";
 
 const items = [
-  { img: "/images/still-life-1.jpg", title: "Aroma Studio website", client: "Squeeze" },
-  { img: "/images/still-life-2.jpg", title: "Halo Digital Agency website", client: "Squeeze" },
-  { img: "/images/still-life-3.jpg", title: "Digital Agency website", client: "Squeeze" },
-  { img: "/images/abstract-purple-cubes.jpg", title: "Cube Labs website", client: "Squeeze" },
+  { img: "/images/still-life-1.jpg", title: "Vue Migration", client: "Legacy upgrade" },
+  { img: "/images/still-life-2.jpg", title: "Product Dashboard", client: "React & Redux" },
+  { img: "/images/still-life-3.jpg", title: "CMS Platform", client: "Figma to UI" },
+  { img: "/images/abstract-purple-cubes.jpg", title: "Responsive Web App", client: "Cross-device UX" },
 ];
 
 export default function ScrollStrip() {
@@ -25,7 +25,7 @@ export default function ScrollStrip() {
             </div>
             <div className="mt-4 flex items-center justify-between text-sm">
               <span className="font-medium text-neutral-800">{item.title}</span>
-              <span className="text-neutral-400">For Squeeze</span>
+              <span className="text-neutral-400">{item.client}</span>
             </div>
           </div>
         ))}

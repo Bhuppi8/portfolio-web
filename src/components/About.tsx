@@ -13,10 +13,10 @@ export default function About() {
               About Me
             </h2>
             <p className="mt-6 max-w-sm text-neutral-500">
-              I'm specialize in turning complex problems into elegant
-              solutions. My approach blends creativity with strategic thinking
-              to deliver designs that not only look great but work seamlessly.
-              Ready to start your next project?
+              I&apos;m a creative frontend developer with 8+ years of experience
+              building responsive, scalable interfaces using React.js, Vue.js,
+              AngularJS, and TypeScript. I turn product ideas into polished,
+              accessible experiences that are both beautiful and performant.
             </p>
 
             <div className="mt-16 hidden lg:block">
@@ -38,9 +38,9 @@ export default function About() {
                 <Globe2 size={16} />
               </span>
               <div className="mt-10">
-                <p className="text-5xl font-medium tracking-tight text-neutral-900">120%</p>
+                <p className="text-5xl font-medium tracking-tight text-neutral-900">8+</p>
                 <p className="mt-3 text-sm text-neutral-500">
-                  Average increase in client engagement in the first 6 months
+                  Years crafting modern frontend experiences across web products.
                 </p>
               </div>
             </div>
@@ -48,7 +48,7 @@ export default function About() {
             <div className="relative overflow-hidden rounded-3xl bg-neutral-200">
               <img
                 src="/images/about-photo.jpg"
-                alt="D.Nova portrait"
+                alt="Bhupender Singh Rautela portrait"
                 className="h-full w-full min-h-[260px] object-cover grayscale"
               />
             </div>
@@ -59,9 +59,10 @@ export default function About() {
                   +
                 </span>
                 <p className="text-sm text-neutral-600">
-                  With 4+ years of experience, I specialize in creating
-                  intuitive, user-focused designs that solve real-world
-                  problems and deliver seamless digital experiences.
+                  Over the past 8+ years, I&apos;ve built and optimized frontend
+                  systems for enterprise products, improving maintainability,
+                  performance, and user experience through reusable components and
+                  clean architecture.
                 </p>
               </div>
               <div className="flex items-start gap-4 rounded-2xl border border-neutral-200 bg-white p-5">
@@ -69,9 +70,9 @@ export default function About() {
                   +
                 </span>
                 <p className="text-sm text-neutral-600">
-                  I thrive on working closely with clients, blending
-                  creativity with strategy to bring their vision to life
-                  through thoughtful, impactful design solutions.
+                  I work closely with UX designers, backend engineers, and QA to
+                  turn Figma and Adobe XD designs into pixel-perfect, accessible,
+                  production-ready interfaces that deliver business value.
                 </p>
               </div>
 
@@ -83,7 +84,7 @@ export default function About() {
                     className="h-full w-full object-cover grayscale"
                   />
                 </div>
-                <span className="text-sm text-neutral-600">Trusted by happy clients</span>
+                <span className="text-sm text-neutral-600">Core stack: React, Vue, TypeScript</span>
                 <ArrowUpRight size={15} className="text-neutral-400" />
               </div>
             </div>

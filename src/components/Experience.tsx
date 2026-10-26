@@ -2,38 +2,38 @@ import { ArrowUpRight } from "lucide-react";
 
 const roles = [
   {
-    company: "Creative Minds, New York, USA",
-    period: "February 2022 - Present",
-    desc: "Innovated designs, New York, Senior Product Designer",
-    tags: ["UI/UX", "Branding"],
+    company: "Omnicom (Annalect), Gurugram, Haryana, India",
+    period: "Aug 2022 – Present · 4 yrs",
+    desc: "Frontend Developer · Built and modernized responsive interfaces using React.js, Vue.js, TypeScript, and Redux while leading AngularJS-to-Vue migration initiatives.",
+    tags: ["React", "Vue", "TypeScript"],
   },
   {
-    company: "Innovative Designs Inc, USA",
-    period: "January 2020 - February 2022",
-    desc: "Led UX/UI, San Francisco. Crafting tomorrow's experiences",
-    tags: ["UI/UX", "Branding"],
+    company: "Chetu, Inc., Noida, Uttar Pradesh, India",
+    period: "Mar 2022 – Jul 2022 · 5 mos",
+    desc: "Senior Frontend Developer · Delivered scalable React apps and reusable UI components with REST API integration and performance optimizations.",
+    tags: ["React", "UI Components", "Performance"],
   },
   {
-    company: "Visionary Creations Ltd, UK",
-    period: "February 2022 - Present",
-    desc: "Principal Designer, Berlin. Crafting tomorrow's experiences",
-    tags: ["Branding", "UI/UX"],
+    company: "Chetu, Inc., Noida, Uttar Pradesh, India",
+    period: "Feb 2021 – Mar 2022 · 1 yr 2 mos",
+    desc: "UI Frontend Developer · Developed responsive, accessible frontend features in Agile teams using HTML5, CSS3, JavaScript, React, and TypeScript.",
+    tags: ["JavaScript", "HTML5", "CSS3"],
   },
 ];
 
 const featured = {
-  company: "FutureTech, Berlin, Germany",
-  period: "February 2022 - Present",
-  desc: "From crafting seamless user experiences to leading strategic product design initiatives, each experience has shaped my approach and strengthened my passion for solving design challenges.",
-  tags: ["Branding", "UI/UX"],
+  company: "Roasted Web Technology Pvt. Ltd., Noida, Uttar Pradesh, India",
+  period: "Dec 2017 – Nov 2020 · 3 yrs",
+  desc: "Web / UI Designer · Specialized in responsive layouts, PSD-to-HTML conversion, Adobe XD mockups, WordPress customization, and design-to-code workflows.",
+  tags: ["UX", "Design Systems", "WordPress"],
   images: ["/images/still-life-1.jpg", "/images/still-life-3.jpg", "/images/abstract-teal.jpg"],
 };
 
 const last = {
-  company: "Expert Designs Inc, USA",
-  period: "February 2022 - Present",
-  desc: "Innovated designs, New York, Senior Product Designer",
-  tags: ["UI/UX", "Branding"],
+  company: "Graphic Era Hill University, Bhimtal, Uttarakhand",
+  period: "2011 – 2015",
+  desc: "B.Tech, Information Technology",
+  tags: ["IT", "Engineering"],
 };
 
 function Tag({ label }: { label: string }) {
@@ -54,17 +54,17 @@ export default function Experience() {
               <span className="h-1.5 w-1.5 rounded-full bg-neutral-900" /> Experiences
             </p>
             <h2 className="max-w-md text-4xl font-medium tracking-tight text-neutral-900 sm:text-5xl">
-              Explore My Design Journey
+              Explore My Frontend Journey
             </h2>
           </div>
           <div className="max-w-sm">
             <p className="text-neutral-500">
-              Over the past 4+ years, I've had the opportunity to work on a
-              wide range of design projects, collaborating with diverse teams
-              and clients to bring creative visions to life.
+              With 8+ years of frontend development experience, I&apos;ve built
+              responsive web applications, led migrations, and partnered with
+              design and backend teams to deliver high-quality digital products.
             </p>
             <a href="#contact" className="mt-4 inline-flex items-center gap-1 text-sm font-medium text-neutral-900 underline underline-offset-4">
-              Book A Call ↗
+              Let&apos;s Connect ↗
             </a>
           </div>
         </div>
