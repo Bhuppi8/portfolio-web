@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Menu, X, ArrowUpRight, Sparkles } from "lucide-react";
 
 const links = [
@@ -10,10 +10,34 @@ const links = [
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const menuButtonRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setOpen(false);
+        menuButtonRef.current?.focus();
+      }
+    };
+    const desktopBreakpoint = window.matchMedia("(min-width: 768px)");
+    const closeOnDesktop = () => {
+      if (desktopBreakpoint.matches) setOpen(false);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    desktopBreakpoint.addEventListener("change", closeOnDesktop);
+
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      desktopBreakpoint.removeEventListener("change", closeOnDesktop);
+    };
+  }, [open]);
 
   return (
     <header className="absolute inset-x-0 top-0 z-30">
-      <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 sm:px-10">
+      <nav aria-label="Main navigation" className="mx-auto flex max-w-7xl items-center justify-between px-6 py-7 sm:px-10">
         <a href="#top" className="flex items-center gap-2 text-sm font-semibold tracking-tight">
           <span className="flex h-8 w-8 items-center justify-center rounded-full bg-white/10 text-white">
             <Sparkles size={15} />
@@ -39,32 +63,38 @@ export default function Navbar() {
         </a>
 
         <button
+          ref={menuButtonRef}
+          type="button"
           onClick={() => setOpen((o) => !o)}
           className="text-white md:hidden"
-          aria-label="Toggle menu"
+          aria-label={open ? "Close menu" : "Open menu"}
+          aria-expanded={open}
+          aria-controls="mobile-navigation"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
       </nav>
 
-      {open && (
-        <div className="mx-6 rounded-2xl bg-black/90 p-6 text-white backdrop-blur md:hidden">
-          <ul className="flex flex-col gap-4 text-base">
-            {links.map((l) => (
-              <li key={l.label}>
-                <a href={l.href} onClick={() => setOpen(false)}>
-                  {l.label}
-                </a>
-              </li>
-            ))}
-            <li>
-              <a href="#contact" onClick={() => setOpen(false)} className="font-medium">
-                Book A Call →
+      <div
+        id="mobile-navigation"
+        hidden={!open}
+        className="mx-6 rounded-2xl bg-black/90 p-6 text-white backdrop-blur md:hidden"
+      >
+        <ul className="flex flex-col gap-4 text-base">
+          {links.map((l) => (
+            <li key={l.label}>
+              <a href={l.href} onClick={() => setOpen(false)}>
+                {l.label}
               </a>
             </li>
-          </ul>
-        </div>
-      )}
+          ))}
+          <li>
+            <a href="#contact" onClick={() => setOpen(false)} className="font-medium">
+              Book A Call →
+            </a>
+          </li>
+        </ul>
+      </div>
     </header>
   );
 }

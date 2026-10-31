@@ -1,14 +1,20 @@
-const links = ["Home", "About Me", "Portfolio", "Experience", "Blog"];
+const links = [
+  { label: "Home", href: "#top" },
+  { label: "About Me", href: "#about" },
+  { label: "Portfolio", href: "#portfolio" },
+  { label: "Experience", href: "#experience" },
+  { label: "Blog", href: "#blog" },
+];
 
 export default function Footer() {
   return (
     <footer id="contact" className="bg-[#121212] py-14 text-white">
       <div className="mx-auto flex max-w-7xl flex-col items-center gap-8 px-6 sm:flex-row sm:justify-between sm:px-10">
         <ul className="flex flex-wrap items-center justify-center gap-6 text-sm text-white/60">
-          {links.map((l) => (
-            <li key={l}>
-              <a href="#top" className="transition hover:text-white">
-                {l}
+          {links.map((link) => (
+            <li key={link.label}>
+              <a href={link.href} className="transition hover:text-white">
+                {link.label}
               </a>
             </li>
           ))}
